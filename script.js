@@ -13,3 +13,22 @@ let dy = 0;
 
 //food position
 let food = {x : 300, y : 200};
+
+//draw snake on the board
+
+function drawSnake() {
+    
+    snake.forEach((segment, index)=>{
+        const segmentElement = document.createElement('div');
+        segmentElement.className = 'snake-segment';
+        segmentElement.style.width = `${cellSize}px`;
+        segmentElement.style.height = `${cellSize}px`;
+        segmentElement.style.position = "absolute";
+        segmentElement.style.left = `${segment.x}px`;
+        segmentElement.style.left = `${segment.y}px`;
+        //head color
+        segmentElement.style.background = index === 0 ? "#4CAF50" : "#8BC34A";
+        gameArena.appendChild(segmentElement);
+
+    })
+}
