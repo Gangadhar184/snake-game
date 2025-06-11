@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #000;
+    color: white;
+}
+.game-arena{
+    width: 600px;
+    height: 600px;
+    background: #333;
+    border: 5px solid gray;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    
+}
+#score-board{
+    font-size: xx-large;
+    color: beige;
+}
+.start-button{
+    border: 8px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: large;
+    cursor: pointer;
+}
